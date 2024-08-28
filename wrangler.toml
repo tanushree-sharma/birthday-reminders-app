@@ -1,0 +1,19 @@
+name = "birthday"
+main = "src/index.ts"
+compatibility_date = "2023-05-18"
+node_compat = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "birthday_reminders"
+database_id = "ea501d2d-3792-4692-b591-50ebeaa60a2f"
+
+# secrets
+#TWILIO_AUTH_TOKEN 
+#TWILIO_ACCOUNT_SID
+#TWILIO_PHONE_NUMBER 
+#YOUR_PHONE_NUMBER
+
+[triggers]
+# crons = ["0 0 * * *"]
+crons = ["*/30 * * * *","0 0 * * *"]
